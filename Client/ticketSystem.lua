@@ -9,7 +9,7 @@ local modem = peripheral.find("modem") or error("No modem attached", 0)
 --Channel Documentaion: 43 is the reciever port, 44 is the sender port--
 modem.open(43) -- Open 43 so we can receive replies
 --send establishment message and wait.
-local message = (systemID+ ":"+"0"+":"+"19")
+local message = (systemID .. ":".."0"..":".."19")
 --Message format: systemID of sender+ ":" + status code + senderID of destination (servers are 19) + Message Field
 
 --status codes: 

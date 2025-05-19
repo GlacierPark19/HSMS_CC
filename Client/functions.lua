@@ -10,3 +10,7 @@ local function parseMessage(message)
       return nil
     end
   end
+
+  return {
+    parseMessage = parseMessage,
+  }
