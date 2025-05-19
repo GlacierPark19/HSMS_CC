@@ -22,7 +22,7 @@ if statusCode == 0 then
 local stationName = gpc_server.stationNames[senderID]
     -- Send a reply back to the client
     local replyMessage = (systemID .. ":" .. "0" .. ":" .. senderID .. ":" .. stationName)
-    modem.transmit(43,0, replyMessage)
+    modem.transmit(43,44, replyMessage)
 end
 
 if statusCode == 1 then
